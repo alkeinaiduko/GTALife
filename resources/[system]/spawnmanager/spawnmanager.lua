@@ -16,9 +16,12 @@ AddEventHandler('getMapDirectives', function(add)
             local s, e = pcall(function()
                 -- is this a map or an array?
                 if opts.x then
-                    x = opts.x
-                    y = opts.y
-                    z = opts.z
+                    -- x = opts.x
+                    x = -268.02
+                    -- y = opts.y
+                    y = -958.13
+                    -- z = opts.z
+                    z = 31.22
                 else
                     x = opts[1]
                     y = opts[2]
@@ -30,7 +33,7 @@ AddEventHandler('getMapDirectives', function(add)
                 z = z + 0.0001
 
                 -- get a heading and force it to a float, or just default to null
-                heading = opts.heading and (opts.heading + 0.01) or 0
+                heading = opts.heading and (opts.heading + 0.01) or 217.22
 
                 -- add the spawnpoint
                 addSpawnPoint({

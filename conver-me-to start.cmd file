@@ -1,16 +1,16 @@
 @ECHO OFF
 :choice
-set /P c=Would you like to lelete your sevrer cache?[Y/N]?
+set /P c=Would you like to delete your server cache?[Y/N]?
 if /I "%c%" EQU "Y" goto :somewhere
 if /I "%c%" EQU "N" goto :somewhere_else
 goto :choice
 :somewhere
 echo "Deleting server cache"
-rd /s /q "G:\GTA_Life\cache\"
+rd /s /q "G:\GTALife\cache\"
 echo -
 echo PlusUltraServer
 echo -
-start G:\GTA_Life\run.cmd +exec server.cfg
+start G:\GTALife\run.cmd +exec server.cfg
 exit
 :somewhere_else
 echo
@@ -18,5 +18,5 @@ echo
 echo -
 echo Server starter by Levy. 
 echo -
-start G:\GTA_Life\run.cmd +exec server.cfg
+start G:\GTALife\run.cmd +exec server.cfg
 exit
